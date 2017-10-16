@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salmeron.mario.tennis.playerNameSelector">
+
+    <TextView
+        android:id="@+id/player1_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/player_one"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/player2_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/player1_textView"
+        android:layout_alignStart="@+id/player1_textView"
+        android:layout_below="@+id/player1_textView"
+        android:layout_marginTop="46dp"
+        android:text="@string/player_two"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/player1_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/player1_textView"
+        android:layout_toEndOf="@+id/player1_textView"
+        android:layout_toRightOf="@+id/player1_textView"
+        android:ems="10"
+        android:inputType="text|textPersonName" />
+
+    <EditText
+        android:id="@+id/player2_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/player2_textView"
+        android:layout_toEndOf="@+id/player2_textView"
+        android:layout_toRightOf="@+id/player2_textView"
+        android:ems="10"
+        android:inputType="text|textPersonName" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:onClick="obtainPlayerNames"
+        android:text="@string/start" />
+</RelativeLayout>
